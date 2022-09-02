@@ -1,0 +1,422 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:500,700);
+:root{
+
+    /*color*/
+    --white-color:#fff;
+    --back-color:#ededed;
+    --mint-light-color:#86BCBB;
+    --mint-dark-color:#427976;
+    --blue-color:#6788cd;
+    --yellow-color:#f8ec3f;
+    --gray-color:#585858;
+    --Orange-color:#fb8158;
+
+    /*size*/
+
+}
+
+*{margin:0;padding:0;border:0;outline:0;font-size:100%}
+
+body{
+    font-family: Dosis, "Malgun Gothic", MalgunGothic, "맑은 고딕", 돋움, Dotum, Arial, Helvetica, sans-serif;
+   font-weight: 500;
+    background-color: var(--back-color);
+    width: 100%;
+    height: 100%;
+    letter-spacing:-0.3px;/*글자간 간격*/
+   
+
+    
+}
+
+header{
+    height:75px;
+    background-color: var(--mint-light-color);
+    border-bottom: 1px solid var(--mint-dark-color);
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 999;/*사용자와 레이어가 가장 가깝다*/
+    
+}
+
+
+
+.Container{width:1024px;margin:0 auto;height:100%;}
+
+
+nav{width:1024vw;
+    height:auto; 
+}
+
+
+
+header.Container nav{display: block; width:1024px; height: 100% ; float:right;}
+
+header .Container h1{
+ 
+    height:26px;
+    width: 160px;
+    margin-top:23px;
+    margin-right:55px ;
+    float:left;
+    background: url("image/index_sprite.png")no-repeat;
+   background-position: -633px -239px;
+   text-indent:-9999px;
+   
+}
+
+
+header .Container h1 a{display:block;}
+
+
+/*헤드 컨테이너 리스트 내용물*/
+header .Container nav ul{
+    list-style-type: none;
+   
+
+}
+header .Container nav ul li{
+    float:left;
+   width: 100px;
+   height:auto;
+   text-align: center;
+   margin-top:27px;
+   
+}
+
+header .Container nav ul li a{
+    color:var(--white-color);
+    text-decoration: none;
+    
+}
+
+header .Container nav ul li a:hover{
+    text-decoration:underline 
+}
+header .Container nav ul .sign{
+    margin-left:410px;
+    line-height: 52px;
+    height:52px;
+    margin-top:11px ;
+    background: url("image/index_sprite.png")no-repeat;
+    background-position: -633px -44px;  
+      /* 스프라이트 위치 */
+      cursor: pointer;
+     
+     
+
+}
+
+ header .Container nav ul li .Login{ 
+   
+    font-size: 13px;
+    width:47.1px;
+    height:20px;
+    font-size: medium;
+
+    
+}
+
+body header .Container nav ul  .sign:hover{
+    background: url("image/index_sprite.png")no-repeat;
+    background-position: -633px -97px;
+    cursor: pointer;
+    text-decoration:underline 
+}
+
+
+li{
+    display:list-item;
+    text-align: center;
+}
+/*바디 필드 머릿말*/
+section{
+    color:#585858;
+    margin-top: 76px;
+    position:relative;
+    display: block;
+
+}
+
+   
+
+section h2{
+    font-weight:700px;
+    font-size:30px;
+    text-align: center;
+    padding-top: 76px;
+    
+}
+
+h2{
+   display: block;
+   margin-block-start: 2.54em;
+   margin-block-end:0.83em;
+   margin-inline-start:0px;
+   margin-inline-end:0px;
+  
+   
+   
+}
+
+
+section p{
+    margin-left:340px;
+    font-size:14px;
+}
+
+section p .desc{
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    width:350px;
+}
+hr{
+    border:0;
+    background:url(image/bg_divider.png)no-repeat 50% 0;
+    height:14px;
+    margin:28px 0;
+}
+/*로그인 방법*/
+
+.contents{
+    width:1024px;
+    height:auto;
+    
+}
+.LoginWay{
+    
+    margin: 0 340px;
+    width: 340px;
+    height: 280px;  
+    padding-bottom:28px;
+    border-bottom: 1px solid #e0dcdc;
+  
+}
+.LoginWay span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-top:21px;
+    padding-bottom:21px;
+    font-size:13px;
+      
+}
+
+ span.facebook{ 
+    background: url(image/icon-facebook.png)no-repeat 16px 50%;
+    background-size: 27px;
+    background-color: #6788cd;
+    border-radius:10px;
+    border:1px solid #7892c7;
+    color:var(--white-color);
+}
+span.facebook:hover{
+    background-color:#506ba7;
+    cursor: pointer;
+}
+
+
+span.google{
+    background: url(image/icon-google.png)no-repeat 16px 50%;
+    background-size: 27px;
+    background-color: #FFFFFF;
+    border:1px solid #E3E3E3;
+    border-radius: 10px;
+}
+span.google:hover{
+    background-color:#d7d7d7;
+    cursor: pointer;
+}
+
+span.kakao{
+    background: url(image/icon-kakao.png)no-repeat 16px 50%;
+    background-size: 27px;
+    background-color:#F8EC3F;
+    border:1px solid #E6DE63;
+    border-radius: 10px;
+}
+span.kakao:hover{
+    background-color:#cec548;
+    cursor: pointer;
+}
+span.apple{
+    background: url(image/icon-apple.png)no-repeat 16px 50%;
+    background-size: 27px;
+    background-color:#595959;
+    border:1px solid #515151;
+    border-radius:10px;
+    color:var(--white-color);
+}
+span.apple:hover{
+    background-color:#3f3f3f;
+    cursor: pointer;
+}
+
+form {
+    height:354.67px;
+    
+}
+.LoginBox{
+    height:354.67px;
+    display: flex;
+    flex-direction: column;
+    margin-left:343px;
+    margin-top:10px;
+    width:340px;
+    
+    
+    
+}
+.LoginBox label{
+line-height: 30px;
+letter-spacing: -0.8px;
+margin-top:7px;
+font-size: 14px;;
+
+}
+.email{
+    height:55px;
+    width:340px;
+    border-radius: 8px;
+}
+.pass{
+    width:340px;
+    height:55px;
+    border-radius: 8px;}
+div.checking{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 340px;
+}
+#auto{
+    font-size: 13px;
+}
+#forgot{
+    font-size: 13px;
+    color:#515151;
+    margin-left:110px;
+}
+input.submit{
+    width:340px;
+    height:55px;
+    background-color: var(--Orange-color);
+    color:var(--white-color);
+    font-size:20px;
+    border-radius: 10px;
+}
+input.submit:hover{
+    background-color:#c76e51;
+    cursor: pointer;
+}
+.LoginBox .notice{
+   margin-top:20px;
+   margin-left:58px;
+   margin-bottom:10px;
+   width:340px;
+}
+.void{
+    margin-bottom: 140px;
+}
+
+footer{
+    position:relative;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+    width:1024px;
+    height:100%;
+    font-size: 15px;
+
+   
+}
+footer .footercontainer{ 
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #e0dcdc;
+    text-align: center;
+    width:1024px;
+    height:20px;
+    padding-top: 30px;
+    padding-bottom: 35px;   
+}
+.footercontainer .contents{
+    list-style: none;
+    margin-left: 240px;
+     }
+    
+footer .contents li{  
+float:left;
+padding-right:35px;
+}
+
+ 
+footer ul li a{
+    text-decoration: none;
+    color:#585858;
+}
+.introd{
+    padding-right:60px;
+}
+.question{
+    padding-right:100px;
+}
+
+.icon{
+    width:1024;
+
+}
+.icon div{
+    width:86px;
+    float:left;
+    margin-left:110px;
+   
+    
+    
+} 
+.icon  li{
+    background: url(image/index_sprite.png)no-repeat;
+    width: 37px;
+    height: 35px;
+    margin-right: 6px;;
+    float: left;
+    cursor: pointer;
+    list-style: none;
+}
+#facebookico{
+    width: 37px;
+    height: 36px;
+    background-position: -631px -150px;
+}
+.icon  #twitterico{
+    
+    width: 37px;
+    height: 36px;
+    background-position: -631px -187px;
+}
+
+#facebookico:hover{
+    width: 37px;
+    height: 36px;
+    background-position: -668px -150px;
+}
+.icon  #twitterico:hover{
+    
+    width: 37px;
+    height: 36px;
+    background-position: -668px -187px;
+}
+.copy{
+    padding-top:20px;
+    padding-bottom:15px;
+}
+.copy span{
+    font-size: 13px;
+    color:#515151;
+    
+}
+
+
+
